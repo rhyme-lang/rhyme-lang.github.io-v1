@@ -4,3 +4,64 @@ Add styles or override variables from the theme here.
 
 */
 
+@import url("https://rsms.me/inter/inter.css");
+/*@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+:root {
+	--bs-body-font-family: "Inter" !important;
+	--bs-font-sans-serif: "Inter" !important;
+	-webkit-font-smoothing: antialiased;
+	font-variation-settings: normal;
+	font-feature-settings: "cv02","cv03","cv04","cv11";
+}
+
+
+
+#td-cover-block-0 {
+	background-image: url(/images/DALL-E-1.jpg) !important;
+	background-color: black !important;
+	background-position: bottom;
+
+
+	.btn {
+		font-weight: 600;
+	}
+	.btn-primary {
+		background: white !important;
+		box-shadow: none !important;
+		border: 2px solid white !important;
+		color: black !important;
+	}
+
+	.btn-secondary {
+		background: none !important;
+		box-shadow: none !important;
+		border: 2px solid white !important;
+		color: white !important;
+	}
+
+	h1 {
+		font-family: "Great Vibes" !important;
+		font-weight: 700;
+	}
+}
+
+#td-cover-block-0::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+
+#foobar {
+	background-image: url(file:///Users/me/Desktop/temp/docsy-example/content/featured-background2.png) !important;
+	background-color: magenta !important;
+}
