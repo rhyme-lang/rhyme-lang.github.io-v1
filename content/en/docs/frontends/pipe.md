@@ -1,7 +1,9 @@
 ---
 title: Pipe API
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  Alternative pipe API, especially designed for cases where the query is more easily expressed as a
+  series of transformations on the input instead of
+  expressing based on the output structure (as in the JSON API).
 date: 2017-01-05
 weight: 2
 ---

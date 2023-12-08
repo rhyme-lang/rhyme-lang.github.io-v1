@@ -1,6 +1,6 @@
 ---
 title: What is Rhyme?
-description: Here's where your user finds out if your project is for them.
+description: Explore what Rhyme is and the general idea behind it.
 weight: 1
 ---
 

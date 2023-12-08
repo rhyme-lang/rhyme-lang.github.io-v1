@@ -1,8 +1,7 @@
 ---
-title: JavaScript
+title: JSON API
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
-date: 2017-01-05
+  The JSON API is the most basic API for Rhyme. It is a simple JSON-based API where users can express Rhyme queries using JSON.
 weight: 1
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Getting Started
-description: What does your user need to know to try your project?
-categories: [Examples, Placeholders]
-tags: [test, docs]
+description: Ready to try your project? Here's how to set things up and play around.
 weight: 2
 ---
 
