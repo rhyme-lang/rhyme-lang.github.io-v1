@@ -6,16 +6,18 @@ title: Rhyme
 <a class="btn btn-md btn-info me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-md btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
+<a class="btn btn-md btn-secondary me-3 mb-4" href="https://www.npmjs.com/package/rhyme-lang">
+  Download <i class="fab fa-npm ms-2 "></i>
 </a>
 {{< /blocks/cover >}}
+
 
 
 {{% blocks/lead color="primary" %}}
 Goldydocs provides a single web UI providing visibility into porridge
 temperature, chair size, and bed softness metrics! You can even find out who's
 been eating **your** porridge.
+
 
 (Sadly, Goldydocs isn't a real project, but you can use this site as an example
 to create your own real websites with [Docsy](https://docsy.dev))
