@@ -1,33 +1,93 @@
 ---
 title: Getting Started
-description: Ready to try your project? Here's how to set things up and play around.
-weight: 2
+description: Excited about Rhyme? Learn about how to get started here!
+weight: 1
 ---
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+## What is it?
 
-Information in this section helps your user try your project themselves.
+Rhyme is a declarative query language designed for querying and transforming nested data structures
+like JSON or tensors (nested arrays).
+It is designed to be easy to use, and to be able to express complex queries in a simple way while also being
+able to achieve performance by constructing an IR which gets optimized and translated to efficient JS code.
+Rhyme takes inspiration from existing approaches like GraphQL, Datalog, JQ, XQuery, and other similar 
+query languages.
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
+It can perform the usual data query operators like aggregations, joins, group-by, and so on, while also having the capability to
+express tensor computations in the style of einops, express visualizations, and so on.
 
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
+Below is an example that computes a group-by aggregation based on keys:
+```js
+let data = [
+    {"key": "A", "value": 30},
+    {"key": "B", "value": 20},
+    {"key": "A", "value": 45},
+]
+// rhyme-query
+let query = {
+    "data.*.key": api.sum("data.*.value")
+}
+// compile 
+let fun = api.compile(query)
+// run the compiled query
+let result = fun({data})
+```
 
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
+Likewise we can also express other types of workloads like tensor computations:
+```js
+let A = [[1, 2], [3, 4]]
+let B = [[5, 6], [7, 8]]
 
-## Prerequisites
+// rhyme-query
+let matmul = {"*i": {"*j": api.sum("A.*i.*j * B.*k.*k")}}
+// compile
+let fun = api.compile(matmul)
+// run the compiled query
+let result = fun({A, B})
+```
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+To learn more about the different ways of using Rhyme, including different APIs, check out the [documentation](/docs/frontends).
 
 ## Installation
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+To get started with the latest release of Rhyme in your node project,
+run the following command:
 
-## Setup
+```bash
+npm install rhyme-lang
+```
 
-Is there any initial setup users need to do after installation to try your project?
+You can then import the library (as you would any other node module) and start using it:
 
-## Try it out!
+```javascript
+const { api } = require('rhyme-lang')
 
-Can your users test their installation, for example by running a command or deploying a Hello World example?
+let data = [
+    { key: "A", value: 10 },
+    { key: "B", value: 20 },
+    { key: "A", value: 30 }
+]
+
+let query = {
+    total: api.sum("data.*.value"),
+    "data.*.key": api.sum("data.*.value"),
+}
+let res = api.compile(query)({ data })
+console.log("Result: " + JSON.stringify(res))
+```
+
+## Developer Installation
+
+Head to our Github repo at [rhyme-lang](https://github.com/rhyme-lang/rhyme-private).
+
+Clone the repo and run `npm install` to install all the dependencies.
+
+```bash
+git clone git@github.com:rhyme-lang/rhyme.git
+cd rhyme
+npm install
+```
+
+If you want to use the development version of the library you cloned in a different
+project, you can run `npm link` in the root directory of the repo and then run
+`npm link rhyme-lang` in your project directory.
