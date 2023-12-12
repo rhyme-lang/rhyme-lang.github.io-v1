@@ -5,5 +5,5 @@ weight: 3
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+JSON API is (currently) the primary API for Rhyme. It is the most expressive API right now. 
 {{% /pageinfo %}}

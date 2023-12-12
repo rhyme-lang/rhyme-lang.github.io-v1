@@ -1,7 +1,7 @@
 ---
 title: Graphics
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
+  Shows how to use Rhyme to create visualization while intermixing with other regular data processing.
 date: 2017-01-05
 weight: 3
 ---
