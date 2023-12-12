@@ -7,7 +7,8 @@ weight: 3
 ---
 
 {{% pageinfo %}}
-This is a placeholder page. Replace it with your own content.
+  <i class="fas fa-tools"></i>
+  Sorry, this page is still under construction.
 {{% /pageinfo %}}
 
-TODO: describe the graphics API docs -- point to what is available, etc.
+<!-- TODO: describe the graphics API docs -- point to what is available, etc. -->

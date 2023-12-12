@@ -14,14 +14,16 @@ title: Rhyme
 
 
 {{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge
-temperature, chair size, and bed softness metrics! You can even find out who's
-been eating **your** porridge.
+
+Rhyme is a new data-centric declarative query language designed for querying and
+transforming nested data structures.
+It is designed to be easy to use, and to be able to express multiple paradigms of
+workloads (typical data processing, visualizations, tensor computations, etc.) in a simple way while also being
+able to achieve performance by constructing an IR which gets optimized and translated to efficient JS code.
 
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example
-to create your own real websites with [Docsy](https://docsy.dev))
-{{% /blocks/lead %}}
+
+<!-- {{% /blocks/lead %}}
 
 
 {{% blocks/section color="dark" type="row" %}}
@@ -74,4 +76,4 @@ For announcement of latest features etc.
 {{% blocks/section %}}
 This is the another section
 {.h1 .text-center}
-{{% /blocks/section %}}
+{{% /blocks/section %}} -->

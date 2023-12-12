@@ -9,7 +9,8 @@ weight: 2
 ---
 
 {{% pageinfo %}}
-This is a placeholder page. Replace it with your own content.
+  <i class="fas fa-tools"></i>
+  Sorry, this page is still under construction.
 {{% /pageinfo %}}
 
-TODO: describe the pipe API documentation
+<!-- TODO: describe the pipe API documentation -->

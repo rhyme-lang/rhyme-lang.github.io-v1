@@ -1,13 +1,14 @@
 ---
 title: Pivot Tables
 description: >
-  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
-date: 2017-01-05
+  Shows how to use Rhyme to concisely create pivot tables from nested data and visualize them using Rhyme's graphics API.
+# date: 2017-01-05
 weight: 1
 ---
 
 {{% pageinfo %}}
-This is a placeholder page. Replace it with your own content.
+  <i class="fas fa-tools"></i>
+  Sorry, this page is still under construction.
 {{% /pageinfo %}}
 
-TODO: show the pivot table example from the blog
+<!-- TODO: show the pivot table example from the blog -->

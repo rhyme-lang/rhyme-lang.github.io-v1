@@ -91,3 +91,9 @@ npm install
 If you want to use the development version of the library you cloned in a different
 project, you can run `npm link` in the root directory of the repo and then run
 `npm link rhyme-lang` in your project directory.
+
+## Useful Links
+
+- Github repo can be found [here](https://github.com/rhyme-lang/rhyme-private)
+- An interactive blog introducing Rhyme can be found [here](https://tiarkrompf.github.io/notes/?/js-queries/).
+- An upcoming publication on Rhyme which is going to appear at PADL 2024 can be found [here](https://www.cs.purdue.edu/homes/rompf/papers/abeysinghe-padl24.pdf).
