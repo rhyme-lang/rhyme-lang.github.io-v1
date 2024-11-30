@@ -9,11 +9,15 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Overview', link: '/overview' }
     ],
 
     sidebar: [
       {
+        text: 'Introduction',
+        items: [
+          { text: 'Overview', link: '/overview' },
+        ],
         text: 'Examples',
         items: [
           { text: 'Markdown Examples', link: '/markdown-examples' },
@@ -23,7 +27,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/rhyme-lang' }
     ]
   }
 })

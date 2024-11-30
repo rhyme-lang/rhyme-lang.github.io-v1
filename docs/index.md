@@ -11,6 +11,9 @@ hero:
     alt: Rhyme
   actions:
     - theme: brand
+      text: Overview
+      link: /overview
+    - theme: alt
       text: Markdown Examples
       link: /markdown-examples
     - theme: alt
